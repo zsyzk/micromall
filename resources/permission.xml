@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<tree id="0">
+	<item text="基本资料" id="01">
+		<item text="基本信息" id="0101">
+			<item text="App使用条款" id="010101">
+				<item text="重新加载" id="01010101" />
+				<item text="新建" id="01010102" />
+				<item text="编辑" id="01010103" />
+				<item text="删除" id="01010104" />
+				<item text="发布" id="01010105" />
+				<item text="查询详情" id="01010106" />
+				<item text="智能搜索" id="01010107" />
+			</item>
+			<item text="周边设施类别" id="010102">
+				<item text="重新加载" id="01010201" />
+				<item text="新建" id="01010202" />
+				<item text="编辑" id="01010203" />
+				<item text="删除" id="01010204" />
+				<item text="查询详情" id="01010205" />
+				<item text="智能搜索" id="01010206" />
+			</item>
+			<item text="周边设施" id="010103">
+				<item text="重新加载" id="01010301" />
+				<item text="新建" id="01010302" />
+				<item text="编辑" id="01010303" />
+				<item text="删除" id="01010304" />
+				<item text="查询详情" id="01010305" />
+				<item text="智能搜索" id="01010306" />
+			</item>
+			<item text="系统编码管理" id="010104">
+				<item text="重新加载" id="01010401" />
+				<item text="新建" id="01010402" />
+				<item text="编辑" id="01010403" />
+				<item text="删除" id="01010404" />
+				<item text="查询详情" id="01010405" />
+			</item>
+			<item text="App版本管理" id="010105">
+				<item text="更新版本" id="01010511" />
+			</item>
+		</item>
+		<item text="常用线路管理" id="0102">
+			<item text="常用线路" id="010201">
+				<item text="重新加载" id="01020101" />
+				<item text="智能搜索" id="01020106" />
+			</item>
+		</item>
+		<item text="Web售票基本资料" id="0103">
+			<item text="购票协议管理" id="010301">
+				<item text="重新加载" id="01030101" />
+				<item text="新建" id="01030102" />
+				<item text="编辑" id="01030103" />
+				<item text="删除" id="01030104" />
+				<item text="发布" id="01030105" />
+				<item text="查询详情" id="01030106" />
+				<item text="智能搜索" id="01030107" />
+			</item>
+		</item>
+	</item>
+	<item text="用户中心" id="02">
+		<item text="基本资料" id="0201">
+			<item text="用户资料" id="020101">
+				<item text="重新加载" id="02010101" />
+				<item text="新建" id="02010102" />
+				<item text="编辑" id="02010103" />
+				<item text="删除" id="02010104" />
+				<item text="查询详情" id="02010105" />
+				<item text="智能搜索" id="02010106" />
+			</item>
+			<item text="用户类型" id="020102">
+				<item text="重新加载" id="02010201" />
+				<item text="新建" id="02010202" />
+				<item text="编辑" id="02010203" />
+				<item text="删除" id="02010204" />
+				<item text="查询详情" id="02010205" />
+				<item text="智能搜索" id="02010206" />
+				<item text="关联权限" id="02010208" />
+			</item>
+		</item>
+	</item>
+
+	<item text="基础数据" id="03">
+		<item text="基础数据管理" id="0301">
+			<item text="地区数据" id="030101">
+				<item text="重新加载" id="03010101" />
+				<item text="编辑" id="03010103" />
+				<item text="智能搜索" id="03010106" />
+			</item>
+			<item text="线路数据" id="030102">
+				<item text="重新加载" id="03010201" />
+				<item text="编辑" id="03010203" />
+				<item text="智能搜索" id="03010206" />
+			</item>
+			<item text="站点基本数据" id="030103">
+				<item text="重新加载" id="03010301" />
+				<item text="编辑" id="03010303" />
+				<item text="智能搜索" id="03010306" />
+			</item>
+			<item text="班次数据" id="030104">
+				<item text="重新加载" id="03010401" />
+				<item text="编辑" id="03010403" />
+				<item text="智能搜索" id="03010406" />
+			</item>
+			<item text="站点数据" id="030105">
+				<item text="重新加载" id="03010501" />
+				<item text="编辑" id="03010503" />
+				<item text="智能搜索" id="03010506" />
+			</item>
+			<item text="节假日数据" id="030106">
+				<item text="重新加载" id="03010601" />
+			</item>
+			<item text="座位图数据" id="030107">
+				<item text="重新加载" id="03010701" />
+			</item>
+		</item>
+		<item text="位置设置" id="0302">
+			<item text="周边设施位置管理" id="030201">
+				<item text="保存" id="03020109" />
+			</item>
+			<item text="地区位置管理" id="030202">
+				<item text="保存" id="03020209" />
+				<item text="保存经纬度" id="03020211" />
+			</item>
+			<item text="站点位置管理" id="030203">
+				<item text="保存" id="03020309" />
+				<item text="保存经纬度" id="03020311" />
+			</item>
+			<item text="地区/站点关联设置" id="030204">
+				<item text="重新加载" id="03020401" />
+				<item text="智能搜索" id="03020406" />
+			</item>
+		</item>
+	</item>
+
+	<!-- 车票订单 -->
+	<item text="车票订单" id="04">
+		<item text="订单管理" id="0401">
+			<item text="所有订单" id="040101">
+				<item text="重新加载" id="04010101" />
+				<item text="智能搜索" id="04010106" />
+			</item>
+			<item text="有效订单" id="040102">
+				<item text="重新加载" id="04010201" />
+				<item text="智能搜索" id="04010206" />
+			</item>
+			<item text="历史订单" id="040103">
+				<item text="重新加载" id="04010301" />
+				<item text="智能搜索" id="04010306" />
+			</item>
+		</item>
+		<item text="车票管理" id="0402">
+			<item text="所有车票" id="040201">
+				<item text="重新加载" id="04020101" />
+				<item text="智能搜索" id="04020106" />
+			</item>
+			<item text="待付款车票" id="040202">
+				<item text="重新加载" id="04020201" />
+				<item text="智能搜索" id="04020206" />
+			</item>
+			<item text="待乘车票" id="040203">
+				<item text="重新加载" id="04020301" />
+				<item text="智能搜索" id="04020306" />
+			</item>
+			<item text="改签车票" id="040204">
+				<item text="重新加载" id="04020401" />
+				<item text="智能搜索" id="04020406" />
+			</item>
+			<item text="已乘车票" id="040205">
+				<item text="重新加载" id="04020501" />
+				<item text="智能搜索" id="04020506" />
+			</item>
+			<item text="过期车票" id="040206">
+				<item text="重新加载" id="04020601" />
+				<item text="智能搜索" id="04020606" />
+			</item>
+		</item>
+		<item text="车票转让" id="0403">
+			<item text="转让记录" id="040301">
+				<item text="重新加载" id="04030101" />
+				<item text="智能搜索" id="04030106" />
+			</item>
+		</item>
+	</item>
+
+	<!-- 验票管理 -->
+	<item text="验票管理" id="05">
+		<item text="验票管理" id="0501">
+			<item text="所有验票记录" id="050101">
+				<item text="重新加载" id="05010101" />
+				<item text="智能搜索" id="05010106" />
+			</item>
+			<item text="APP验票记录" id="050102">
+				<item text="重新加载" id="05010201" />
+				<item text="智能搜索" id="05010206" />
+			</item>
+			<item text="WEB验票记录" id="050103">
+				<item text="重新加载" id="05010301" />
+				<item text="智能搜索" id="05010306" />
+			</item>
+			<item text="站点验票记录" id="050104">
+				<item text="重新加载" id="05010401" />
+				<item text="智能搜索" id="05010406" />
+			</item>
+		</item>
+	</item>
+
+	<!-- 系统管控 -->
+	<item text="系统管控" id="06">
+		<item text="系统参数管理" id="0601">
+			<item text="参数配置" id="060101">
+				<item text="重新加载" id="06010101" />
+				<item text="编辑" id="06010103" />
+				<item text="查询详情" id="06010105" />
+				<item text="还原默认值" id="06010110" />
+				<!-- <item text="智能搜索" id="06010106" /> -->
+			</item>
+		</item>
+	</item>
+</tree>
+<!-- open call select checked -->

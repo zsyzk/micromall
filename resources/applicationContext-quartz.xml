@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+       ">
+	<!-- 定义一个任务调度器 -->
+	<bean id="scheduler" lazy-init="false" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref local="dataSyncTriggerQuartz" />
+			</list>
+		</property>
+        <property name="quartzProperties">
+            <props>
+                <prop key="org.quartz.threadPool.class">org.quartz.simpl.SimpleThreadPool</prop>
+                <prop key="org.quartz.threadPool.threadCount">10</prop>
+                <prop key="org.quartz.threadPool.threadPriority">5</prop>
+                <prop key="org.quartz.threadPool.threadsInheritContextClassLoaderOfInitializingThread">true</prop>
+            </props>
+        </property>
+	</bean>
+	
+	<!-- 数据同步配置 start   -->
+	<!-- 配置触发器调度bean -->
+	<bean id="dataSync" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<!-- 引用一个bean -->
+		<property name="targetObject" ref=""/>
+		<!-- 指定目标bean的方法 -->
+		<property name="targetMethod" value="dataSyncHandle"/>
+	</bean>	
+	<!-- 配置触发器-->
+	<!-- 一个cronExpresssion表达式有至少6个（也可能7个）有空格分隔的时间元素。从左到右cronExpresssion的值的意思：
+	     1.秒
+	     2.分
+	     3.小时
+	     4.月份中的日期（1-31）
+	     5.月份（1-12或JAN-DEC)
+	     6.星期中的日期（1-7或SUN-SAT）
+	     7.年份（1970-2099） 
+                     每个元素都显示的规定一个值（如6），一个区间（9-12），
+                     一个列表（9，11，13）或一个通配符（*）。因为4和6这两个元素是互斥的，
+                     因此应该通过设置一个问号（？）来表明不想设置的那个字段，
+        “/”如果值组合就表示重复次数（10/6表示每10秒重复6次）。
+      -->
+	<!-- <bean id="dataSyncTriggerQuartz" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="dataSync"/>
+		<property name="cronExpression" value="0 0/1 * * * ?"/>
+	</bean>	 -->
+</beans>

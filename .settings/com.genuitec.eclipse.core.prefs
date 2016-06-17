@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/easyui/jquery.min.js,WebRoot/editor/kindeditor.js,corechart.I.js,default,WebRoot/js/format+zh_CN,default,corechart.I.js,WebRoot/js/util/uContext.js,WebRoot/js/format+zh_CN,WebRoot/js/page/jquery-2.0.3.min.js,WebRoot/js/jquery.js,WebRoot/js/select-ui.min.js,WebRoot/page/js/jquery-2.0.3.min.js
+validator.Unchecked=

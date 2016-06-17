@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<entry key="profiler.settings.instrument.empty.methods">true</entry>
+<entry key="ProfilerCPUSettings_profile_runnables">true</entry>
+<entry key="profiler.settings.n.profiled.threads.limit">32</entry>
+<entry key="ProfilerCPUSettings_filter_type">2</entry>
+<entry key="profiler.settings.obj.alloc.stack.sampling.depth">-1</entry>
+<entry key="profiler.settings.instrument.method.invoke">true</entry>
+<entry key="profiler.settings.instr.scheme">1</entry>
+<entry key="ProfilerMemorySettings_track_every">10</entry>
+<entry key="ProfilerMemorySettings_mode">4</entry>
+<entry key="ProfilerCPUSettings_root_classes">micromall.goods.control.**
+micromall.manager.constant.**
+micromall.manager.control.springmvc.**
+micromall.manager.dao.**
+micromall.manager.filter.**
+micromall.manager.jsonfilter.**
+micromall.manager.servcie.**
+micromall.manager.serviceimpl.**
+micromall.manager.vo.**
+micromall.member.control.**
+micromall.servlet.**
+micromall.util.**
+</entry>
+<entry key="ProfilerCPUSettings_filter_value">micromall.goods.control.*,&#13;
+micromall.manager.constant.*,&#13;
+micromall.manager.control.springmvc.*,&#13;
+micromall.manager.dao.*,&#13;
+micromall.manager.filter.*,&#13;
+micromall.manager.jsonfilter.*,&#13;
+micromall.manager.servcie.*,&#13;
+micromall.manager.serviceimpl.*,&#13;
+micromall.manager.vo.*,&#13;
+micromall.member.control.*,&#13;
+micromall.servlet.*,&#13;
+micromall.util.*</entry>
+<entry key="profiler.settings.istrument.getter.setter.methods">true</entry>
+<entry key="myeclipse.profiling.mode">0</entry>
+<entry key="ProfilerMemorySettings_stacktraces">-1</entry>
+<entry key="profiler.settings.sampling.interval">10</entry>
+<entry key="profiler.settings.cpu.profiling.type">0</entry>
+</properties>

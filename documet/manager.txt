@@ -1,0 +1,77 @@
+INSERT INTO `sys_model`(id,fname,furl,fdescribe,fstatus,perCode) VALUES (1,'基本资料','images/icon01.png',NULL,1,'01');
+INSERT INTO `sys_model`(id,fname,furl,fdescribe,fstatus,perCode) VALUES (2,'用户中心','images/icon01.png',NULL,1,'02');
+INSERT INTO `sys_model`(id,fname,furl,fdescribe,fstatus,perCode) VALUES (3,'基础数据','images/icon01.png',NULL,1,'03');
+INSERT INTO `sys_model`(id,fname,furl,fdescribe,fstatus,perCode) VALUES (4,'车票管理','images/icon01.png',NULL,1,'04');
+INSERT INTO `sys_model`(id,fname,furl,fdescribe,fstatus,perCode) VALUES (5,'验票管理','images/icon01.png',NULL,1,'05');
+INSERT INTO `sys_model`(id,fname,furl,fdescribe,fstatus,perCode) VALUES (6,'系统管控','images/icon01.png',NULL,1,'06');
+
+INSERT INTO sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (1,'基本信息','images/leftico01.png',NULL,1,1,NULL,1,'0101');
+INSERT INTO sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES(2,'App使用条款','dispatcher.shtm','1',1,1,1,1,'010101');
+INSERT INTO sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES(5,'周边设施','dispatcher.shtm','3',1,3,1,1,'010103');
+INSERT INTO sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES(6,'周边设施类别','dispatcher.shtm','4',1,2,1,1,'010102');
+INSERT INTO `sys_menu`  (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(17,'App版本管理','dispatcher.shtm','7',1,5,1,1,'010105');
+
+INSERT INTO sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (30,'常用线路管理','images/leftico01.png',NULL,1,1,NULL,1,'0102');
+INSERT INTO `sys_menu`  (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(31,'常用线路','dispatcher.shtm','24',1,6,30,1,'010201');
+
+INSERT INTO sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (45,'Web售票基本资料','images/leftico01.png',NULL,1,1,NULL,1,'0103');
+INSERT INTO `sys_menu`  (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(46,'购票协议管理','dispatcher.shtm','36',1,1,45,1,'010301');
+
+INSERT INTO sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES(3,'基本资料','images/leftico01.png',NULL,1,2,NULL,2,'0201');
+INSERT INTO sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES(4,'用户资料','dispatcher.shtm','2',1,1,3,2,'020101');
+
+
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(9,'基础数据管理','images/leftico01.png',NULL,1,5,NULL,3,'0301');
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(10,'地区数据','dispatcher.shtm','8',1,1,9,3,'030101');
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(11,'线路数据','dispatcher.shtm','9',1,2,9,3,'030102');
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(12,'站点基本数据','dispatcher.shtm','11',1,3,9,3,'030103');
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(13,'班次数据','dispatcher.shtm','10',1,4,9,3,'030104');
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(14,'站点数据','dispatcher.shtm','12',1,5,9,3,'030105');
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(15,'节假日数据','dispatcher.shtm','13',1,6,9,3,'030106');
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(16,'座位图数据','dispatcher.shtm','14',1,7,9,3,'030107');
+
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(18,'位置设置','images/leftico01.png',NULL,1,5,NULL,3,'0302');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (8,'周边设施位置管理','dispatcher.shtm','6',1,5,18,1,'030201');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (32,'地区位置管理','dispatcher.shtm','25',2,5,18,1,'030202');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (33,'站点位置管理','dispatcher.shtm','26',3,5,18,1,'030203');
+
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(19,'订单管理','images/leftico01.png',NULL,1,5,NULL,4,'0401');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (20,'所有订单','dispatcher.shtm','15',1,1,19,4,'040101');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (23,'有效订单','dispatcher.shtm','17',1,2,19,4,'040102');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (24,'历史订单','dispatcher.shtm','18',1,3,19,4,'040103');
+
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode)  VALUES(21,'车票管理','images/leftico01.png',NULL,1,5,NULL,4,'0402');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (22,'所有车票','dispatcher.shtm','16',1,1,21,4,'040201');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (25,'待付款车票','dispatcher.shtm','19',1,2,21,4,'040202');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (26,'待乘车票','dispatcher.shtm','20',1,3,21,4,'040203');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (27,'改签车票','dispatcher.shtm','21',1,4,21,4,'040204');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (28,'已乘车票','dispatcher.shtm','22',1,5,21,4,'040205');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (29,'过期车票','dispatcher.shtm','23',1,6,21,4,'040206');
+
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES(43,'车票转让','images/leftico01.png',NULL,1,5,NULL,4,'0403');
+INSERT INTO `sys_menu` (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES(44,'转让记录','dispatcher.shtm','35',1,6,43,4,'040301');
+
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (34,'验票管理','images/leftico01.png',NULL,1,1,NULL,5,'0501');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (35,'所有验票记录','dispatcher.shtm','27',1,1,34,5,'050101');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (36,'APP验票记录','dispatcher.shtm','28',1,2,34,5,'050102');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (37,'WEB验票记录','dispatcher.shtm','30',1,3,34,5,'050103');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (38,'站点验票记录','dispatcher.shtm','29',1,4,34,5,'050104');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (39,'用户类型','dispatcher.shtm','31',1,4,3,2,'020102');
+
+
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (40,'系统参数管理','images/leftico01.png',NULL,1,1,NULL,6,'0601');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (41,'参数配置','dispatcher.shtm','32',1,1,40,5,'060101');
+insert into sys_menu (id,fname,furl,mark,fstatus,sort,fparent_id,fmodel_id,perCode) VALUES (42,'地区/站点关联设置','dispatcher.shtm','33',1,4,18,3,'030204');
+
+
+INSERT INTO `user_type`(user_type_id,status,type_name,type_ms) VALUES (1, 1, '管理员', '管理员');
+INSERT INTO `user`(user_id,username,password,status,user_type_id,user_type_name) VALUES (1, 'admin','D4842D5376778C931DF35D6D4074442D', 1,1, '管理员');
+INSERT INTO `sys_per`(per_id,user_type_id) VALUES (1, 1);
+INSERT INTO `sys_per_mod`(per_mod_id,per_id,per_mod_code) VALUES (1, 1, '02');
+INSERT INTO `sys_per_menu`(per_menu_id,per_id,per_mod_code,per_menu_code) VALUES (1, 1, '02', '0201');
+INSERT INTO `sys_per_menu`(per_menu_id,per_id,per_mod_code,per_menu_code) VALUES (2, 1, '02', '020102');
+INSERT INTO `sys_per_act` VALUES (1, 1, '020102', '02010208');
+
+INSERT INTO version_app(version,client_type,updateDate,status) VALUES ('1',18,'2015-01-14 10:18:05',1);
+INSERT INTO version_app(version,client_type,updateDate,status) VALUES ('1',8,'2015-01-14 10:18:05',1);
+
