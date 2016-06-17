@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="micromall.manager.vo.UserType" table="tb_priv_user_type">
+		<id name="userTypeId" type="int">
+			<column name="user_type_id" />
+			<generator class="identity"></generator>
+		</id>
+		<property name="status" type="java.lang.Integer">
+			<column name="status" />
+		</property>
+		<property name="typeName" type="java.lang.String">
+			<column length="50" name="type_name" />
+		</property>
+		<property name="typeMs" type="java.lang.String">
+			<column length="100" name="type_ms" />
+		</property>
+	</class>
+</hibernate-mapping>

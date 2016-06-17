@@ -1,0 +1,74 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>滚动页面时DIV到达顶部时固定在顶部--柯乐义</title>
+<script type="text/javascript"
+	src="http://keleyi.com/keleyi/pmedia/jquery-1.9.1.min.js"></script>
+</head>
+<body style="margin:0px;">
+	<div style="height:300px;background:#e0e0e0">请滚动鼠标使页面向下</div>
+	<div id="fixedMenu_keleyi_com" style="background:#ffffff;width:100%;">
+		<ul>
+			<li><a href="http://keleyi.com/menu/net/" target="_blank">.NET</a></li>
+			<li><a href="http://keleyi.com/menu/javascript/" target="_blank">Javascript</a></li>
+			<li><a href="http://keleyi.com/menu/jquery/" target="_blank">jQuery</a></li>
+			<li><a href="http://keleyi.com/menu/csharp/" target="_blank">C#</a></li>
+			<li><a href="http://keleyi.com/menu/other/" target="_blank">其他</a></li>
+			<li><a href="http://keleyi.com/" target="_blank">首页</a></li>
+			<li><a href="http://keleyi.com/menu/aspnet/" target="_blank">ASP.NET</a></li>
+			<li><a href="http://keleyi.com/menu/mvc/" target="_blank">MVC</a></li>
+		</ul>
+		<div>
+			<script type="text/javascript" src="/kineryi/js/gggg728x90a.js"></script>
+		</div>
+	</div>
+	<div style="height:2600px;background:#999">
+		<div style="background-color:Green; width:100%;height:150px;">keleyi.com</div>
+		<div style="background-color:Red; width:100%;height:150px;">欢迎</div>
+		<div style="background-color:Yellow; width:100%;height:150px;">hi</div>
+		<div style="background-color:Silver; width:100%;height:150px;">柯乐义</div>
+		<div style="background-color:Aqua; width:100%;height:150px;">keleyi.com</div>
+		<div style="background-color:Fuchsia; width:100%;height:150px;">keleyi</div>
+		<div style="background-color:Green; width:100%;height:150px;">keleyi.com</div>
+		<div style="background-color:Blue; width:100%;height:150px;">柯乐义</div>
+		<div style="background-color:Olive; width:100%;height:150px;">柯乐义
+			监视下滚像素</div>
+		<div style="background-color:Green; width:100%;height:150px;">A</div>
+		<div style="background-color:Purple; width:100%;height:150px;">jquery</div>
+		<div style="background-color:Green; width:100%;height:150px;">
+			<a href="http://keleyi.com/a/bjac/ed5eb8c2959c619e.htm"
+				target="_blank">原文</a>
+		</div>
+		<div style="background-color:Lime; width:100%;height:150px;">keleyi.com</div>
+		<div style="background-color:Orange; width:100%;height:150px;">完整代码</div>
+	</div>
+	<script type="text/javascript">
+		$(function() {
+			var ie6 = document.all;
+			var dv = $('#fixedMenu_keleyi_com'), st;
+			dv.attr('otop', dv.offset().top); //存储原来的距离顶部的距离
+			$(window).scroll(
+					function() {
+						st = Math.max(document.body.scrollTop
+								|| document.documentElement.scrollTop);
+						if (st > parseInt(dv.attr('otop'))) {
+							if (ie6) {//IE6不支持fixed属性，所以只能靠设置position为absolute和top实现此效果
+								dv.css({
+									position : 'absolute',
+									top : st
+								});
+							} else if (dv.css('position') != 'fixed')
+								dv.css({
+									'position' : 'fixed',
+									top : 0
+								});
+						} else if (dv.css('position') != 'static')
+							dv.css({
+								'position' : 'static'
+							});
+					});
+		});
+	</script>
+</body>
+</html>

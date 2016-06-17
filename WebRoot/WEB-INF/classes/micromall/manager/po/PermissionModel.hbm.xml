@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="micromall.manager.vo.PermissionModel" table="tb_priv_sys_per_mod">
+		<id name="perModelId" type="java.lang.Integer">
+			<column name="per_mod_id" />
+			<generator class="identity"></generator>
+		</id>
+		<property name="perId" type="java.lang.Integer">
+			<column name="per_id" />
+		</property>
+		<property name="perModelCode" type="java.lang.String">
+			<column length="10" name="per_mod_code" />
+		</property>
+	</class>
+</hibernate-mapping>
