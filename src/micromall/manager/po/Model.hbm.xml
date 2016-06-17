@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="micromall.manager.vo.Model" table="tb_priv_sys_model">
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="identity"></generator>
+		</id>
+		<property name="fname" type="java.lang.String">
+			<column length="50" name="fname" />
+		</property>
+		<property name="furl" type="java.lang.String">
+			<column length="50" name="furl" />
+		</property>
+		<property name="perCode" type="java.lang.String">
+			<column length="10" name="perCode" />
+		</property>
+		<set name="fmenu" cascade="save-update" inverse="true">
+			<key>
+				<column name="fmodel_id"></column>
+			</key>
+			<one-to-many class="micromall.manager.vo.Menu" />
+		</set>
+		<property name="fdescribe" type="java.lang.String">
+			<column length="200" name="fdescribe" />
+		</property>
+		<property name="fstatus" type="java.lang.Integer">
+			<column name="fstatus"></column>
+		</property>
+	</class>
+</hibernate-mapping>
